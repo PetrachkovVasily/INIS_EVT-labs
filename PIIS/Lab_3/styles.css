@@ -1,0 +1,15 @@
+#quickview {
+    position: fixed;
+    background-color: rgb(83, 83, 141);
+    bottom: 0px;
+    left: 0px;
+    height: 40%;
+    width: 100%;
+}
+html,body {
+    width: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
