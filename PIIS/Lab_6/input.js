@@ -38,7 +38,6 @@ function moveElement(event) {
 }
 
 let firstTime = undefined;
-let endTime = undefined;
 
 function moveDoubleElement(event) {
     let currentTime = new Date().getTime();
@@ -53,14 +52,13 @@ function moveDoubleElement(event) {
     selected.style.position = 'absolute';
     selected.style.backgroundColor = 'blue';
 
-    document.addEventListener('touchstart', moveAtD);
+    document.addEventListener('touchstart', moveAt);
     document.addEventListener('touchstart', twoTouches)
-    document.addEventListener('touchend', endTimer);
 
     function stopMoving(event) {
         leftP = selected.style.left;
         topP = selected.style.top;
-        document.removeEventListener('touchstart', moveAtD);
+        document.removeEventListener('touchstart', moveAt);
         document.removeEventListener('touchstart', twoTouches);
         selected.addEventListener('touchend', moveDoubleElement);
     }
@@ -73,32 +71,35 @@ function moveDoubleElement(event) {
         }
     }
 
-    function endTimer (event) {
-            endTime = new Date().getTime();
-            console.log(endTime)
-            document.removeEventListener('touchend', endTimer)
-        }
-
-    function moveAtD(event) {
+    function moveAt(event) {
         let startTime = new Date().getTime();
-        
+        console.log("Start")
+        console.log(startTime)
+        let endTime = undefined;
         selected.style.left = event.touches[0].pageX - selected.offsetWidth / 2 + 'px';
         selected.style.top = event.touches[0].pageY - selected.offsetHeight / 2 + 'px';
-        
+        document.addEventListener('touchend', endTimer);
         //leftP = selected.style.left;
         //topP = selected.style.top;
 
-        if (endTime - startTime > 200) {
+        
+        
+
+        function endTimer (event) {
+            endTime = new Date().getTime();
+            
+            console.log("End")
+            console.log(endTime)
+            document.removeEventListener('touchend', endTimer)
+            if (endTime - startTime > 200) {
             console.log('aaa')
             return;
+            }
+            document.removeEventListener('touchstart', moveAt);
+            //document.removeEventListener('touchend', stopMoving);
+            //document.removeEventListener('touchstart', twoTouches);
+            selected.addEventListener('touchend', moveDoubleElement);
+            selected.style.backgroundColor = 'red';
         }
-        console.log('bbb')
-        document.removeEventListener('touchstart', moveAtD);
-        //document.removeEventListener('touchend', stopMoving);
-        //document.removeEventListener('touchstart', twoTouches);
-        selected.addEventListener('touchend', moveDoubleElement);
-        selected.style.backgroundColor = 'red';
-
-        
     }
 }
