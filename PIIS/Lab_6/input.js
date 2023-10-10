@@ -28,10 +28,9 @@ function moveElement(event) {
 
     function twoTouches(event) {
         if (event.touches.length > 1){
-            leftP = selected.style.left;
-            topP = selected.style.top;
-            document.removeEventListener('touchmove', moveAt);
-            document.removeEventListener('touchend', stopMoving);
+            selected.style.left = leftP
+            selected.style.top = topP;
+            stopMoving(event);
         }
     }
 }
