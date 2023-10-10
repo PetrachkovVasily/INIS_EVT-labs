@@ -24,6 +24,7 @@ function moveElement(event) {
         topP = selected.style.top;
         document.removeEventListener('touchmove', moveAt);
         document.removeEventListener('touchend', stopMoving);
+        document.removeEventListener('touchstart', twoTouches);
     }
 
     function twoTouches(event) {
