@@ -1,5 +1,4 @@
 document.querySelectorAll('.target').forEach(div => {
-    div.addEventListener('dblclick', moveElement);
     div.addEventListener('touchstart', moveElement);
     
 })
@@ -17,7 +16,7 @@ function moveElement(event) {
         selected.style.left = pageX - selected.offsetWidth / 2 + 'px';
         selected.style.top = pageY - selected.offsetHeight / 2 + 'px';
         if (event.touches[1]!=undefined) {
-            alert('qqq')
+            
             document.removeEventListener('touchmove', onFingerMove);
             selected.style.left = leftP;
             selected.style.top = topP;
@@ -41,9 +40,9 @@ function moveElement(event) {
     //         }
     // }
 
-    event.target.ontouchend = function() {
+    event.target.touchend = function() {
         document.removeEventListener('touchmove', onFingerMove);
-        event.target.ontouchend = null;
+        event.target.touchend = null;
     };
 
 };
