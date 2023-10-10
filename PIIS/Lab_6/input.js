@@ -1,119 +1,27 @@
-let selectedTouch;
-let color = document.querySelector(".target").style.background;
+document.querySelectorAll('.target').forEach(div => {
+    div.addEventListener('touchstart', moveElement);
+    
+})
 
-let startLeft;
-let startTop;
+function moveElement(event) {
+    let leftP = event.target.style.left;
+    let topP = event.target.style.top;
+    let selected = event.target;
+    selected.style.position = 'absolute'; 
 
-document.querySelectorAll(".target").forEach((block) =>
-{
-    block.addEventListener("touchstart", (event) =>
-    {
-        console.log(event);
+    document.addEventListener('touchmove', moveAt)
+    document.addEventListener('touchend', stopMoving)
 
-        selectedTouch = event.target;
-
-        startLeft = selectedTouch.style.left;
-        startTop = selectedTouch.style.top;
-
-        document.addEventListener("touchmove", moveAtTouch);
-
-        document.addEventListener("touchend", stopMoving);
-
-        document.addEventListener("touchstart", checkTwoTouches);
-    });
-
-    block.addEventListener("touchend", checkDoubleTap);
-});
-
-function moveAtTouch(event) 
-{   
-    selectedTouch.removeEventListener("touchend", checkDoubleTap);
-    selectedTouch.style.left = event.touches[0].pageX - selectedTouch.offsetWidth / 2 + 'px';
-    selectedTouch.style.top = event.touches[0].pageY - selectedTouch.offsetHeight / 2 + 'px';
-}
-
-function stopMoving(event)
-{
-    document.removeEventListener("touchmove", moveAtTouch);
-
-    startLeft = selectedTouch.style.left;
-    startTop = selectedTouch.style.top;
-
-    document.removeEventListener("touchend", stopMoving);
-    document.removeEventListener("touchstart", checkTwoTouches);
-    selectedTouch.addEventListener("touchend", checkDoubleTap);
-}
-
-let firstTapTime = undefined;
-let doubleTapMaxDelta = 500;
-let followCancelationTime = 200;
-
-function checkDoubleTap(event)
-{
-    let currTapTime = new Date().getTime();
-
-    if(firstTapTime == undefined || currTapTime - firstTapTime > doubleTapMaxDelta)
-    {
-        firstTapTime = currTapTime;
-        return;
+    function moveAt(event) {
+        console.log('sdfhj')
+        selected.style.left = event.touches[0].pageX - selected.offsetWidth / 2 + 'px';
+        selected.style.top = event.touches[0].pageY - selected.offsetHeight / 2 + 'px';
     }
 
-    selectedTouch = event.target;
-    selectedTouch.style.background = "blue";
-    startLeft = selectedTouch.style.left;
-    startTop = selectedTouch.style.top;
-
-    selectedTouch.removeEventListener("touchend", checkDoubleTap);
-    document.addEventListener("touchstart", checkFollowCancelation);
-}
-
-function checkFollowCancelation(event)
-{
-    document.removeEventListener("touchstart", checkFollowCancelation);
-    let tapStartTime = new Date().getTime();
-    let tapStartX = event.changedTouches[0].pageX;
-    let tapStartY = event.changedTouches[0].pageY;
-
-    document.addEventListener("touchmove", moveAtTouch);
-    document.addEventListener("touchend", cancelFollow);
-
-    function cancelFollow(evt)
-    {
-        document.removeEventListener("touchend", cancelFollow);
-
-        if(new Date().getTime() - tapStartTime <= followCancelationTime 
-            && evt.changedTouches[0].pageX == tapStartX
-            && evt.changedTouches[0].pageY == tapStartY
-        )
-        {
-            document.removeEventListener("touchmove", moveAtTouch);
-            selectedTouch.style.background = color;
-            selectedTouch.addEventListener("touchend", checkDoubleTap);
-        }
-        else
-        {
-            selectedTouch.style.left = evt.changedTouches[0].pageX - selectedTouch.offsetWidth / 2 + 'px';
-            selectedTouch.style.top = evt.changedTouches[0].pageY - selectedTouch.offsetHeight / 2 + 'px';
-            
-            document.addEventListener("touchstart", checkFollowCancelation);
-        } 
+    function stopMoving(event) {
+        leftP = selected.style.left;
+        topP = selected.style.top;
+        document.removeEventListener('touchmove', moveAt);
+        document.removeEventListener('touchend', stopMoving);
     }
 }
-
-function checkTwoTouches(event)
-{
-    if(event.touches.length === 2)
-    {
-        selectedTouch.style.left = startLeft;
-        selectedTouch.style.top = startTop;
-
-        document.removeEventListener("touchmove", moveAtTouch);
-        document.removeEventListener("touchend", stopMoving);
-        selectedTouch.addEventListener("touchend", checkDoubleTap);
-
-        document.removeEventListener("touchstart", checkTwoTouches);
-
-
-    }
-}
-
