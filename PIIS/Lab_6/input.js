@@ -16,7 +16,7 @@ function moveElement(event) {
         selected.style.left = pageX - selected.offsetWidth / 2 + 'px';
         selected.style.top = pageY - selected.offsetHeight / 2 + 'px';
         if (event.touches.length == 2) {
-            alert('j')
+           
             document.removeEventListener('touchmove', onFingerMove);
             selected.style.left = leftP;
             selected.style.top = topP;
