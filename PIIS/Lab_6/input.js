@@ -30,7 +30,8 @@ function moveElement(event) {
         if (event.touches.length > 1){
             leftP = selected.style.left;
             topP = selected.style.top;
-            stopMoving(event);
+            document.removeEventListener('touchmove', moveAt);
+            document.removeEventListener('touchend', stopMoving);
         }
     }
 }
