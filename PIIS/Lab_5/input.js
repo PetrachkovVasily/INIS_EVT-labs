@@ -33,14 +33,17 @@ function moveElement(event) {
     function moveEsc(event) {
         if (event.code == "Escape") {
                 console.log(leftP, topP)
-                document.removeEventListener('mousemove', onMouseMove);
+                
                 selected.style.left = leftP;
                 selected.style.top = topP;
                 selected.style.backgroundColor = 'red';
-                document.removeEventListener('keydown', moveEsc)
+                document.removeEventListener("keydown", moveEsc);
+                document.removeEventListener('mousemove', onMouseMove);
             }
     }
 
+    console.log("Here");
+    
     if (event.type == 'dblclick'){
         event.target.style.backgroundColor = 'blue';
         event.target.onclick = function() {
@@ -52,9 +55,11 @@ function moveElement(event) {
     }
     else  {
         event.target.onmouseup = function() {
-            document.removeEventListener('mousemove', onMouseMove);
-            event.target.onmouseup = null;
-        };
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener("keydown", moveEsc);
+        event.target.onmouseup = null;
+        
+    };
     }
 
 };

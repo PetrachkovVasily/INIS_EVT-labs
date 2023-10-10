@@ -1,8 +1,9 @@
 shirts.map(function(item, index, array) {
     let keyCount = Object.keys(item.colors).length;
     let div = document.createElement('div');
-    var colorskeys = Object.keys(item.colors);
-    var sidekeys = Object.keys(item.colors[colorskeys[0]]);  
+    let colorskeys = Object.keys(item.colors);
+
+    let sidekeys = Object.keys(item.colors[colorskeys[0]]);  
     div.className = "shirt_card";
     div.innerHTML = `<div>
     <img src=${item.colors[colorskeys[0]][sidekeys[0]]} alt='There is no image here'>
