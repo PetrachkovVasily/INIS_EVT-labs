@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex</title>
+</head>
+<body>
+    <header>
+        <h1>Изучаем flexbox</h1>
+    </header>
+    <div class="contentContainer">
+        <div class="fistContainer">
+
+            <article>
+                <h2>1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                </p>
+            </article>
+            <article>
+                <h2>2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                </p>
+            </article>
+            <article>
+                <h2>3</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                </p>
+            </article>
+        
+        </div>
+
+        <div class="containerWrapper">
+            <div class="secondContainer">
+
+                <article>
+                    <h2>4</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article>
+                <article>
+                    <h2>5</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article>
+                <article>
+                    <h2>6</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article>
+                
+            </div>
+            <div class="thirdContainer">
+                <div class="halfOneThirdContainer">
+                    <article>
+                        <h2>7</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>8</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                        </p>
+                    </article>
+                </div>
+                <div class="halfTwoThirdContainer">
+                    <article>
+                        <h2>9</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>10</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="additionalTask">
+
+        <h2>display</h2>
+        <div>
+            <button onclick="first.style.display = 'flex'">flex</button>
+            <button onclick="first.style.display = 'inline-flex'">inline-flex</button>
+        </div>
+        <div id="elements">
+            Text
+            <div id="first" class="numbers">
+                <div class="num">
+                    1
+                </div>
+                <div class="num">
+                    2
+                </div>
+                <div class="num">
+                    3
+                </div>
+                <div class="num">
+                    4
+                </div>
+            </div>
+        </div>
+
+        <h2>flex-direction</h2>
+        <div>
+            <button onclick="second.style.flexDirection = 'row'">row</button>
+            <button onclick="second.style.flexDirection = 'row-reverse'">row-reverse</button>
+            <button onclick="second.style.flexDirection = 'column'">column</button>
+            <button onclick="second.style.flexDirection = 'column-reverse'">column-reverse</button>
+        </div>
+        <div id="elements">
+            <div id="second" class="numbers">
+                <div class="num">
+                    1
+                </div>
+                <div class="num">
+                    2
+                </div>
+                <div class="num">
+                    3
+                </div>
+                <div class="num">
+                    4
+                </div>
+            </div>
+        </div>
+
+        <h2>flex-wrap</h2>
+        <div>
+            <button onclick="third.style.flexWrap = 'nowrap'">nowrap</button>
+            <button onclick="third.style.flexWrap = 'wrap'">wrap</button>
+            <button onclick="third.style.flexWrap = 'wrap-reverse'">wrap-reverse</button>
+        </div>
+        <div id="elements">
+            <div id="third" class="numbers">
+                <div class="num">
+                    1
+                </div>
+                <div class="num">
+                    2
+                </div>
+                <div class="num">
+                    3
+                </div>
+                <div class="num">
+                    4
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

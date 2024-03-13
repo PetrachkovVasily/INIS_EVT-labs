@@ -1,0 +1,101 @@
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: rgba(16, 233, 215, 0.178);
+  }
+
+  .fistContainer {
+    display: flex;
+
+  } 
+
+  .secondContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column-reverse;
+    justify-content: end;
+  }
+
+  .thirdContainer {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .containerWrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .halfOneThirdContainer {
+    display: flex;
+  }
+
+  .halfTwoThirdContainer {
+    display: flex;
+  }
+
+  .numbers {
+    display: flex;
+    border: 1px solid black;
+  }
+  
+  .num {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #ff4c4c;
+  }
+
+  #elements {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 100px;
+  }
+
+  #first {
+    display: grid;
+  }
+
+  #second {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  #third {
+    display: flex;
+    align-items: flex-start;
+    
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+
+  #third > .num {
+    width: 40%;
+  }
