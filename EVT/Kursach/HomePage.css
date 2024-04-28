@@ -219,6 +219,9 @@ h1 {
 
   .discounts {
     gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .discount_categories {
@@ -247,6 +250,9 @@ h1 {
     margin-bottom: 0;
   }
 
+}
+
+@media screen and (max-width: 606px) {
   .discount_categories {
     max-width: 332px;
     height: 258px;
