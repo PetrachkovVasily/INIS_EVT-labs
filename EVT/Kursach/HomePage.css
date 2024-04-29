@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  gap: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -12,6 +11,27 @@ h1 {
   font-weight: bold;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 .header {
@@ -253,6 +273,103 @@ h1 {
   color: black;
 }
 
+.footer {
+  width: 100%;
+  min-width: 380px;
+  box-shadow: 0px -3px 5px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.upper_footer {
+  width: 100%;
+  min-width: 380px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_content {
+  max-width: 1440px;
+  width: inherit;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.link_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 18px;
+}
+
+.phones {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.map {
+  min-width: 150px;
+  max-width: 300px;
+  height: 237px;
+  border-radius: 12px;
+  border: none;
+}
+
+.under_footer {
+  height: 81px;
+  width: 100%;
+  background-color: #FA4862;
+  min-width: 380px;
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  max-width: 1440px;
+  width: inherit;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.region_description {
+  display: flex;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.separator {
+  width: 2px;
+  height: 18px;
+  background-color: #fff;
+}
+
+.icons {
+  display: flex;
+  gap: 24px;
+}
+
+.social_media {
+  height: 24px;
+  width: auto;
+}
+
 @media screen and (max-width: 768px) {
   .header {
     height: 111px;
@@ -308,8 +425,6 @@ h1 {
     font-size: 12px;
   }
 
-
-
   .cards {
     display: flex;
     flex-direction: column;
@@ -341,11 +456,12 @@ h1 {
     justify-content:start;
     border-radius: 12px;
   }
+
 }
 
 @media screen and (max-width: 380px) {
   .page_content {
-    margin-bottom: 0;
+    margin-bottom: 24px;
   }
 }
 
@@ -355,5 +471,33 @@ h1 {
     height: 258px;
     flex-wrap: wrap;
     align-content: space-between;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .footer_logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer_content {
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 462px) {
+  .social {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    height: 87px;
+  }
+
+  .under_footer {
+    height: fit-content;
   }
 }
