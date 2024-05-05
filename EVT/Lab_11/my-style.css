@@ -1,0 +1,100 @@
+.header {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: #3cff00;
+  height: 80px;
+}
+
+.footer {
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: #3cff00;
+  height: 80px;
+}
+
+body #fot a {
+  color: rgb(0, 0, 238) !important;
+  cursor: default !important;
+  text-decoration-line: underline !important;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+body article.article p {
+  font-style: normal;
+}
+
+body article.article img+p::first-letter {
+  font-size: 40px;
+  color: rgb(0, 21, 255);
+}
+
+html body .wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body article.article img {
+  width: 150px;
+  height: 150px;
+  float: left;
+}
+
+body article:nth-child(4n) img{
+  float: right;
+}
+
+blockquote.blockquote {
+  font-style: italic;
+}
+
+.word {
+  position: sticky;
+  top: 80px;
+  height: 40px;
+  width: 80px;
+}
+
+.word.first {
+  background-color: #ff0101;
+}
+
+.word.second {
+  left: 80px;
+  background-color: #ff5a01;
+}
+
+.word.third {
+  left: 160px;
+  background-color: #ff9101;
+}
+
+.word.fourth {
+  left: 240px;
+  background-color: #ffc801;
+}
+
+.word.fifth {
+  left: 320px;
+  background-color: #ffff01;
+}
