@@ -49,6 +49,15 @@ h4 {
   letter-spacing: 0.03em;
 }
 
+h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  width: fit-content;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -84,4 +93,9 @@ label {
   letter-spacing: 0.03em;
   text-align: justify;
   line-height: 150%;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
 }
