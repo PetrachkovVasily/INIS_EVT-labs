@@ -66,3 +66,5 @@ https://heartfelt-kulfi-2f183f.netlify.app
 </div>
 
 https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white&style=for-the-badge
+https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white
+https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white
