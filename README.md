@@ -62,5 +62,5 @@ https://heartfelt-kulfi-2f183f.netlify.app
 
 
 <div id="header" align="center">
-  <img src="[https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXJpYWgwaGFjdGdla3hnbW54NGJqbGxpbWg5OGtqYnpyaG43dzB1byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif)" width="100"/>
+  <img width="300px" height="300px" src="[https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXJpYWgwaGFjdGdla3hnbW54NGJqbGxpbWg5OGtqYnpyaG43dzB1byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif)" width="100"/>
 </div>
