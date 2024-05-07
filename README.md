@@ -66,7 +66,7 @@ https://heartfelt-kulfi-2f183f.netlify.app
 </div>
 
 <div id="badges"  align="center">
-  <a href="[your-linkedin-URL](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)">
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
   <a href="your-youtube-URL">
