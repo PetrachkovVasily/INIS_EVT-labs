@@ -41,6 +41,8 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+  
+  line-height: 21px;
 }
 
 .map {
@@ -120,5 +122,28 @@
 
   .under_footer {
     height: fit-content;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .link_block {
+    gap: 15px;
+  }
+
+  .link_title {
+    font-size: 15px;
+  }
+
+  .footer_link {
+    font-size: 12px;
+  }
+
+  .footer_content {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .phones {
+    line-height: 17px;
   }
 }

@@ -179,13 +179,6 @@
     justify-content:start;
     border-radius: 12px;
   }
-
-}
-
-@media screen and (max-width: 380px) {
-  .page_content {
-    margin-bottom: 24px;
-  }
 }
 
 @media screen and (max-width: 606px) {
@@ -194,5 +187,26 @@
     height: 258px;
     flex-wrap: wrap;
     align-content: space-between;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .page_content {
+    margin-bottom: 18px;
+    margin-top: 18px;
+    gap: 24px;
+  }
+
+  .discounts_title {
+    font-size: 24px;
+    font-weight: normal;
+  }
+  
+  .discounts {
+    gap: 24px;
+  }
+
+  .categories_cards {
+    gap: 24px;
   }
 }
