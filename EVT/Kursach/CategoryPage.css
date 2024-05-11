@@ -108,6 +108,9 @@
   font-size: 12px;
   font-weight: bold;
   color: black;
+
+  
+  line-height: 154%;
 }
 
 .item_card {
@@ -115,7 +118,6 @@
   max-height: 261px;
   height: 18.125vw;
   width: 100%;
-  margin-bottom: 3px;
   
   background-image: url(icons/empty_img.jpg);
   background-repeat: no-repeat;
@@ -157,7 +159,7 @@
   width: 102px;
   height: 18px;
   display: flex;
-  gap: 1px;
+  gap: 3px;
   margin-bottom: 9px;
 }
 
@@ -213,6 +215,7 @@
     padding: 9px;
     gap: 6px;
     justify-content: start;
+    letter-spacing: 0em;
   }
   
   .items { 
@@ -222,6 +225,7 @@
   
   .item_card {
     height: 23.44vw;
+    margin-bottom: 2px;
   }
 
   .favorite_item_btn {
@@ -282,6 +286,7 @@
   .filters {
     width: 132px;
     height: 36px;
+    justify-content: center;
   }
 
   .page_content {
@@ -317,5 +322,9 @@
 
   .item_card {
     height: 138px;
+  }
+
+  .item {
+    line-height: 153.5%;
   }
 }

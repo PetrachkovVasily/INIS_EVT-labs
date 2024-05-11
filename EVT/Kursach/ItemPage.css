@@ -143,7 +143,7 @@
   width: 102px;
   height: 18px;
   display: flex;
-  gap: 1px;
+  gap: 3px;
 }
 
 .add_to_cart_btn {
@@ -296,7 +296,7 @@
 }
 
 .name {
-  width: 261px;
+  width: fit-content;
   height: 24px;
   display: flex;
   gap: 9px;
@@ -369,6 +369,14 @@
   .reviews {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .item_label {
+    line-height: 150%;
+  }
+
+  .item_description {
+    gap: 30px;
   }
 }
 

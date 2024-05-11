@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   letter-spacing: 0.03em;
+  
 }
 
 body {
@@ -31,7 +32,7 @@ h2 {
   margin: 0;
   font-size: 27px;
   font-weight: bold;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   text-align: center;
 }
 
@@ -98,7 +99,7 @@ label {
   font-weight: normal;
   letter-spacing: 0.03em;
   text-align: justify;
-  line-height: 150%;
+  line-height: 154%;
 }
 
 .star {

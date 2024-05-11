@@ -103,6 +103,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .link_block {
+    gap: 17px;
+  }
+}
+
+
 @media screen and (max-width: 720px) {
   .footer_content {
     justify-content: start;
