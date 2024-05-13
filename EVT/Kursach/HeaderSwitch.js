@@ -82,7 +82,7 @@ function switchTheme(event) {
       newStr1 = newStr1.slice(40);
       newStr2 = newStr2.slice(0, 40);
       console.log("icons/ALT" + newStr1.join(""))
-      svgImg.src = "icons/ALT" + newStr1.join("");
+      svgImg.src = "ALT" + newStr1.join("");
     }
   } else {
     document.querySelector("html").classList.remove("dark");
