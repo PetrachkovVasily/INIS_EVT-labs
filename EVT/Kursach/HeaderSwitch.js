@@ -15,7 +15,10 @@ themeBtn.addEventListener("click", switchTheme);
 
 let pageSvgArray = document.querySelectorAll('.svgImg');
 
-
+if (!localStorage.getItem('isLight')) {
+  localStorage.setItem('isLight', true);
+}
+;
 
 
 
