@@ -18,7 +18,6 @@ let pageSvgArray = document.querySelectorAll('.svgImg');
 if (!localStorage.getItem('isLight')) {
   localStorage.setItem('isLight', true);
 }
-;
 
 
 
@@ -38,8 +37,8 @@ if(localStorage.getItem('isLight') == "true") {
   for (let svgImg of pageSvgArray) {
     let newStr1 = svgImg.src.split('');
     let newStr2 = svgImg.src.split('');
-    newStr1 = newStr1.slice(svgImg.src.indexOf("icons/" + 6));
-    newStr2 = newStr2.slice(0, svgImg.src.indexOf("icons/" + 6));
+    newStr1 = newStr1.slice(40);
+    newStr2 = newStr2.slice(0, 40);
     console.log("icons/ALT" + newStr1.join(""))
     svgImg.src = "icons/ALT" + newStr1.join("");
   }
@@ -79,8 +78,8 @@ function switchTheme(event) {
     for (let svgImg of pageSvgArray) {
       let newStr1 = svgImg.src.split('');
       let newStr2 = svgImg.src.split('');
-      newStr1 = newStr1.slice(svgImg.src.indexOf("icons/" + 6));
-      newStr2 = newStr2.slice(0, svgImg.src.indexOf("icons/" + 6));
+      newStr1 = newStr1.slice(40);
+      newStr2 = newStr2.slice(0, 40);
       console.log("icons/ALT" + newStr1.join(""))
       svgImg.src = "icons/ALT" + newStr1.join("");
     }
