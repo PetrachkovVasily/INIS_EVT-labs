@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,24 +13,53 @@
     <link rel="stylesheet" href="Header.css" />
     <link rel="stylesheet" href="Footer.css" />
     <link rel="stylesheet" href="ItemPage.css" />
+    <link rel="stylesheet" href="SideMenu.css" />
   </head>
   <body>
     <header class="header">
       <div class="inner_header">
         <div class="upper_block">
-          <img alt="Logo" src="icons/Logo.svg" class="Logo"/>
+          <a href="HomePage.html">
+            <img id="logo" alt="Logo" src="icons/Logo.svg" class="Logo"/>
+          </a>
+          <div class="search_bar upper">
+            <input class="search_string" placeholder="Поиск по категориям"></input>      
+            <div class="search_btn">
+              <img src="icons/searchIcon.svg" alt="searchIcon">
+            </div>
+          </div>
           <div class="side_btns">
             <button class="header_btn">Войти</button>
-            <img class="favorites" src="icons/Favorites.svg" alt="favorites">
-            <img class="cart" src="icons/Cart.svg" alt="cart">
+            <img class="favorites svgImg" src="icons/Favorites.svg" alt="favorites">
+            <img class="cart svgImg" src="icons/Cart.svg" alt="cart">
           </div>
         </div>
         <nav class="under_block">
-          <button class="header_btn">
-            <img class="menu_btn" src="icons/menu.svg" alt="menu">
+          <button class="header_btn under">
+            <img class="menu_btn svgImg" src="icons/menu.svg" alt="menu">категория
           </button>
-          <div class="search_bar">
-            <input class="search_string" placeholder="Поиск по категориям"></input>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+
+          
+          <button class="header_btn upper">
+            <img class="menu_btn svgImg" src="icons/menu.svg" alt="menu">
+          </button>
+          <div class="search_bar under">
+            <input class="search_string" placeholder="Поиск по категориям"></input>      
             <div class="search_btn">
               <img src="icons/searchIcon.svg" alt="searchIcon">
             </div>
@@ -38,37 +67,94 @@
         </nav>
       </div>
     </header>
-
+    <aside class="side_menu">
+      <article class="side_header">
+        <a href="HomePage.html">
+          <img id="logo" alt="Logo" src="icons/Logo.svg" class="Logo"/>
+        </a>
+        <button class="cross_btn">
+          <img class="cross svgImg" src="icons/cross-svgrepo-com.svg" alt="cross">
+        </button>
+      </article>
+      <article class="menu_links">
+        <h3 class="side_h3">Категории</h3>
+        <nav class="side_nav">
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+        </nav>
+      </article>
+      <article class="side_footer">
+        <button class="theme_btn">
+          <img class="moon svgImg" src="icons/moon-svgrepo-com.svg" alt="moon">
+        </button>
+      </article>
+    </aside>
 
     <div class="content">
       <section class="page_content">
         <article class="item">
           <div class="carousel">
             <div class="item_cards">
-              <div class="card_options"></div>
-              <div class="card_options"></div>
-              <div class="card_options"></div>
-              <div class="card_options"></div>
-              <div class="card_options"></div>
-              <div class="card_options"></div>
-              <div class="card_options"></div>
-              <div class="card_options"></div>
-              <div class="card_options"></div>
-              <div class="card_options"></div>
-              <div class="card_options"></div>
-              <div class="card_options"></div>
+              <div class="carousel_cards">
+                <!-- <img class="card_options" src="itemImages/first.jpg" alt="item">
+                <img class="card_options" src="itemImages/second.jpg" alt="item">
+                <img class="card_options" src="itemImages/third.jpg" alt="item">
+                <img class="card_options" src="itemImages/forth.jpg" alt="item">
+                <img class="card_options" src="itemImages/fifth.jpg" alt="item">
+                <img class="card_options" src="itemImages/sixth.jpg" alt="item">
+                <img class="card_options" src="itemImages/seventh.jpg" alt="item">
+                <img class="card_options" src="itemImages/eightth.jpg" alt="item">
+                <img class="card_options" src="itemImages/nineth.jpg" alt="item">
+                <img class="card_options" src="itemImages/tenth.jpg" alt="item">
+                <img class="card_options" src="itemImages/eleventh.jpg" alt="item">
+                <img class="card_options" src="itemImages/twelfth.jpg" alt="item">      -->
+              </div>
             </div>
             <div class="item_container">
-              <div class="carousel_btn">
-                <img src="icons/left_arrow.svg" alt="left_arrow" class="arrow">
-              </div>
-              <div class="item_img"></div>
-              <div class="carousel_btn">
-                <img src="icons/right_arrow.svg" alt="left_arrow" class="arrow">
-              </div>
-              <div class="carousel_btn favorites_btn">
-                <img class="fav_icon" src="icons/favorites_carousel_btn.svg" alt="left_arrow" class="arrow">
-              </div>
+              <button onclick="switchLeft(event)" class="carousel_btn">
+                <img src="icons/left_arrow.svg" alt="left_arrow" class="arrow left svgImg">
+              </button>
+              <img class="item_img" src="itemImages/first.jpg" alt="item">
+              <button onclick="switchRight(event)" class="carousel_btn">
+                <img src="icons/right_arrow.svg" alt="left_arrow" class="arrow right svgImg">
+              </button>
+              <button class="carousel_btn favorites_btn">
+                <img class="fav_icon svgImg" src="icons/favorites_carousel_btn.svg" alt="left_arrow" class="arrow">
+              </button>
             </div>
           </div>
           <div class="item_description">
@@ -79,13 +165,13 @@
             <div class="description">
               <label class="item_label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</label>
               <div class="shop">
-                <h4>Название магазина</h4>
+                <a class="shop_page link_item_underline" href="HomePage.html"><h4>Название магазина</h4></a>
                 <div class="stars">
-                  <img src="icons/full_star.svg" alt="star">
-                  <img src="icons/full_star.svg" alt="star">
-                  <img src="icons/full_star.svg" alt="star">
-                  <img src="icons/half_star.svg" alt="star">
-                  <img src="icons/empty_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/empty_star.svg" alt="star">
                 </div>
               </div>
             </div>
@@ -97,11 +183,11 @@
             <div class="reviews_number">
               <h2 class="rev_amount">135 отзывов</h2>
               <div class="stars">
-                <img class="star" src="icons/full_star.svg" alt="star">
-                <img class="star" src="icons/full_star.svg" alt="star">
-                <img class="star" src="icons/full_star.svg" alt="star">
-                <img class="star" src="icons/half_star.svg" alt="star">
-                <img class="star" src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
             </div>
             <div class="rev_pannel">
@@ -121,10 +207,10 @@
                   <div class="underline"></div>
                 </button>
               </div>
-              <div class="filter">
+              <button class="filter">
                 <h5>Отсортировать: по дате</h5>
-                <img class="filter_arrow" src="icons/filter_arrow.svg" alt="filter_arrow">
-              </div>
+                <img class="filter_arrow svgImg" src="icons/filter_arrow.svg" alt="filter_arrow">
+              </button>
               <div class="underline rev_header_bottom"></div>
             </div>
           </div>
@@ -132,11 +218,11 @@
             <div class="review">
               <div class="rev_info">
                 <div class="stars">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/half_star.svg" alt="star">
-                  <img class="star" src="icons/empty_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/empty_star.svg" alt="star">
                 </div>
                 <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</label>
                 <div class="name">
@@ -150,11 +236,11 @@
             <div class="review">
               <div class="rev_info">
                 <div class="stars">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/half_star.svg" alt="star">
-                  <img class="star" src="icons/empty_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/empty_star.svg" alt="star">
                 </div>
                 <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</label>
                 <div class="name">
@@ -168,11 +254,11 @@
             <div class="review">
               <div class="rev_info">
                 <div class="stars">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/half_star.svg" alt="star">
-                  <img class="star" src="icons/empty_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/empty_star.svg" alt="star">
                 </div>
                 <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</label>
                 <div class="name">
@@ -186,11 +272,11 @@
             <div class="review">
               <div class="rev_info">
                 <div class="stars">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/half_star.svg" alt="star">
-                  <img class="star" src="icons/empty_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/empty_star.svg" alt="star">
                 </div>
                 <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</label>
                 <div class="name">
@@ -204,11 +290,11 @@
             <div class="review">
               <div class="rev_info">
                 <div class="stars">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/full_star.svg" alt="star">
-                  <img class="star" src="icons/half_star.svg" alt="star">
-                  <img class="star" src="icons/empty_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                  <img class="star svgImg" src="icons/empty_star.svg" alt="star">
                 </div>
                 <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</label>
                 <div class="name">
@@ -230,7 +316,9 @@
     <footer class="footer">
       <section class="upper_footer">
         <article class="footer_content">
-          <img alt="Logo" src="icons/Logo.svg" class="footer_logo"/>
+          <a href="#logo">
+            <img alt="Logo" src="icons/Logo.svg" class="footer_logo"/>
+          </a>
           <div class="link_block">
             <h3 class="link_title">Категории</h3>
             <a class="footer_link" href="HomePage.html">Категория</a>
@@ -266,14 +354,15 @@
             $ (USD)
           </div>
           <div class="icons">
-            <img class="social_media" src="icons/Facebook.svg" alt="facebook">
-            <img class="social_media" src="icons/twitter.svg" alt="twitter">
-            <img class="social_media" src="icons/inst.svg" alt="inst">
-            <img class="social_media" src="icons/Pinterest.svg" alt="pinterest">
+            <img class="social_media svgImg" src="icons/Facebook.svg" alt="facebook">
+            <img class="social_media svgImg" src="icons/twitter.svg" alt="twitter">
+            <img class="social_media svgImg" src="icons/inst.svg" alt="inst">
+            <img class="social_media svgImg" src="icons/Pinterest.svg" alt="pinterest">
           </div>
         </div>
       </section>
     </footer>
     <script src="HeaderSwitch.js"></script>
+    <script src="Carousel.js"></script>
   </body>
 </html>

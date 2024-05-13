@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,24 +13,53 @@
     <link rel="stylesheet" href="Header.css" />
     <link rel="stylesheet" href="Footer.css" />
     <link rel="stylesheet" href="CategoryPage.css">
+    <link rel="stylesheet" href="SideMenu.css" />
   </head>
   <body>
     <header class="header">
       <div class="inner_header">
         <div class="upper_block">
-          <img alt="Logo" src="icons/Logo.svg" class="Logo"/>
+          <a href="HomePage.html">
+            <img id="logo" alt="Logo" src="icons/Logo.svg" class="Logo"/>
+          </a>
+          <div class="search_bar upper">
+            <input class="search_string" placeholder="Поиск по категориям"></input>      
+            <div class="search_btn">
+              <img src="icons/searchIcon.svg" alt="searchIcon">
+            </div>
+          </div>
           <div class="side_btns">
             <button class="header_btn">Войти</button>
-            <img class="favorites" src="icons/Favorites.svg" alt="favorites">
-            <img class="cart" src="icons/Cart.svg" alt="cart">
+            <img class="favorites svgImg" src="icons/Favorites.svg" alt="favorites">
+            <img class="cart svgImg" src="icons/Cart.svg" alt="cart">
           </div>
         </div>
         <nav class="under_block">
-          <button class="header_btn">
-            <img class="menu_btn" src="icons/menu.svg" alt="menu">
+          <button class="header_btn under">
+            <img class="menu_btn svgImg" src="icons/menu.svg" alt="menu">категория
           </button>
-          <div class="search_bar">
-            <input class="search_string" placeholder="Поиск по категориям"></input>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+
+          
+          <button class="header_btn upper">
+            <img class="menu_btn svgImg" src="icons/menu.svg" alt="menu">
+          </button>
+          <div class="search_bar under">
+            <input class="search_string" placeholder="Поиск по категориям"></input>      
             <div class="search_btn">
               <img src="icons/searchIcon.svg" alt="searchIcon">
             </div>
@@ -38,355 +67,506 @@
         </nav>
       </div>
     </header>
-
+    <aside class="side_menu">
+      <article class="side_header">
+        <a href="HomePage.html">
+          <img id="logo" alt="Logo" src="icons/Logo.svg" class="Logo"/>
+        </a>
+        <button class="cross_btn">
+          <img class="cross svgImg" src="icons/cross-svgrepo-com.svg" alt="cross">
+        </button>
+      </article>
+      <article class="menu_links">
+        <h3 class="side_h3">Категории</h3>
+        <nav class="side_nav">
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+        </nav>
+      </article>
+      <article class="side_footer">
+        <button class="theme_btn">
+          <img class="moon svgImg" src="icons/moon-svgrepo-com.svg" alt="moon">
+        </button>
+      </article>
+    </aside>
     <div class="content">
       <section class="page_content">
         <article class="subcategories">
           <h1>Подкатегории</h1>
           <div class="subcategories_cards">
             <div class="subcategory">
-              <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="subcategory_btn">Подкатегория</button>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="subcategory_btn">Подкатегория</button>
+              </a>
             </div>
             <div class="subcategory">
-              <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="subcategory_btn">Подкатегория</button>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="subcategory_btn">Подкатегория</button>
+              </a>
             </div>
             <div class="subcategory">
-              <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="subcategory_btn">Подкатегория</button>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="subcategory_btn">Подкатегория</button>
+              </a>
             </div>
             <div class="subcategory">
-              <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="subcategory_btn">Подкатегория</button>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="subcategory_btn">Подкатегория</button>
+              </a>
             </div>
             <div class="subcategory">
-              <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="subcategory_btn">Подкатегория</button>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="subcategory_btn">Подкатегория</button>
+              </a>
             </div>
             <div class="subcategory">
-              <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="subcategory_btn">Подкатегория</button>
-            </div>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="subcategory_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="subcategory_btn">Подкатегория</button>
+              </a>
+            </div>            
           </div>
           <button class="show_more_btn">Показать больше(6)</button>
         </article>
         <article class="page_items">
           <div class="filters">
-            <img src="icons/Filter.svg" alt="Filter">
+            <img class="svgImg" src="icons/Filter.svg" alt="Filter">
             Все фильтры
           </div>
           <section class="items">
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
             </div>
             <div class="item">
-              <div class="item_card">
-                <div class="favorite_item_btn">
-                  <img class="favorites_icon" src="icons/Favorites.svg" alt="favorites">
+              <a class="card_img_link" href="ItemPage.html">
+                <div class="item_card">
+                  <div class="favorite_item_btn">
+                    <img class="favorites_icon svgImg" src="icons/Favorites.svg" alt="favorites">
+                  </div>
                 </div>
-              </div>
-              <h4>Название товара</h4>
+              </a>
+              <a class="item_link" href="ItemPage.html">
+                <h4>Название товара</h4>
+              </a>
               <div class="stars">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/full_star.svg" alt="star">
-                <img src="icons/half_star.svg" alt="star">
-                <img src="icons/empty_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/full_star.svg" alt="star">
+                <img class="star svgImg" src="icons/half_star.svg" alt="star">
+                <img class="star svgImg" src="icons/empty_star.svg" alt="star">
               </div>
               <h4>USD 31.20</h4>
               (2 043)
-            </div>
+            </div>            
           </section>
           <div class="numbers">
             <div class="number">
-              <img src="icons/left_arrow.svg" alt="left_arrow" class="arrow">
+              <img src="icons/left_arrow.svg" alt="left_arrow" class="arrow svgImg">
             </div>
             <div class="number first_page">1</div>
             <div class="number">2</div>
@@ -398,7 +578,7 @@
             <div class="number">8</div>
             <div class="number">...</div>
             <div class="number">
-              <img src="icons/right_arrow.svg" alt="right_arrow" class="arrow">
+              <img src="icons/right_arrow.svg" alt="right_arrow" class="arrow svgImg">
             </div>
           </div>
         </article>
@@ -408,7 +588,9 @@
     <footer class="footer">
       <section class="upper_footer">
         <article class="footer_content">
-          <img alt="Logo" src="icons/Logo.svg" class="footer_logo"/>
+          <a href="#logo">
+            <img alt="Logo" src="icons/Logo.svg" class="footer_logo"/>
+          </a>
           <div class="link_block">
             <h3 class="link_title">Категории</h3>
             <a class="footer_link" href="HomePage.html">Категория</a>
@@ -444,10 +626,10 @@
             $ (USD)
           </div>
           <div class="icons">
-            <img class="social_media" src="icons/Facebook.svg" alt="facebook">
-            <img class="social_media" src="icons/twitter.svg" alt="twitter">
-            <img class="social_media" src="icons/inst.svg" alt="inst">
-            <img class="social_media" src="icons/Pinterest.svg" alt="pinterest">
+            <img class="social_media svgImg" src="icons/Facebook.svg" alt="facebook">
+            <img class="social_media svgImg" src="icons/twitter.svg" alt="twitter">
+            <img class="social_media svgImg" src="icons/inst.svg" alt="inst">
+            <img class="social_media svgImg" src="icons/Pinterest.svg" alt="pinterest">
           </div>
         </div>
       </section>

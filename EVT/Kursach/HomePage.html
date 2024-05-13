@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,24 +13,54 @@
     <link rel="stylesheet" href="Header.css" />
     <link rel="stylesheet" href="Footer.css" />
     <link rel="stylesheet" href="HomePage.css" />
+    <link rel="stylesheet" href="SideMenu.css" />
   </head>
   <body>
+    
     <header class="header">
       <div class="inner_header">
         <div class="upper_block">
-          <img alt="Logo" src="icons/Logo.svg" class="Logo"/>
+          <a href="HomePage.html">
+            <img id="logo" alt="Logo" src="icons/Logo.svg" class="Logo"/>
+          </a>
+          <div class="search_bar upper">
+            <input class="search_string" placeholder="Поиск по категориям"></input>      
+            <div class="search_btn">
+              <img src="icons/searchIcon.svg" alt="searchIcon">
+            </div>
+          </div>
           <div class="side_btns">
             <button class="header_btn">Войти</button>
-            <img class="favorites" src="icons/Favorites.svg" alt="favorites">
-            <img class="cart" src="icons/Cart.svg" alt="cart">
+            <img class="favorites svgImg" src="icons/Favorites.svg" alt="favorites">
+            <img class="cart svgImg" src="icons/Cart.svg" alt="cart">
           </div>
         </div>
         <nav class="under_block">
-          <button class="header_btn">
-            <img class="menu_btn" src="icons/menu.svg" alt="menu">
+          <button class="header_btn under">
+            <img class="menu_btn svgImg" src="icons/menu.svg" alt="menu">категория
           </button>
-          <div class="search_bar">
-            <input class="search_string" placeholder="Поиск по категориям"></input>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+          <a class="card_img_link under" href="CategoryPage.html">
+            <button class="header_btn">категория</button>
+          </a>
+
+          
+          <button class="header_btn upper">
+            <img class="menu_btn svgImg" src="icons/menu.svg" alt="menu">
+          </button>
+          <div class="search_bar under">
+            <input class="search_string" placeholder="Поиск по категориям"></input>      
             <div class="search_btn">
               <img src="icons/searchIcon.svg" alt="searchIcon">
             </div>
@@ -38,34 +68,114 @@
         </nav>
       </div>
     </header>
+    <aside class="side_menu">
+      <article class="side_header">
+        <a href="HomePage.html">
+          <img id="logo" alt="Logo" src="icons/Logo.svg" class="Logo"/>
+        </a>
+        <button class="cross_btn">
+          <img class="cross svgImg" src="icons/cross-svgrepo-com.svg" alt="cross">
+        </button>
+      </article>
+      <article class="menu_links">
+        <h3 class="side_h3">Категории</h3>
+        <nav class="side_nav">
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+          <a class="side_link" href="CategoryPage.html">
+            <button class="side_link_btn">Категория</button>
+            <img class="right_arrow_side svgImg" src="icons/right_arrow_side(black).svg" alt="right_arrow">
+          </a>
+        </nav>
+      </article>
+      <article class="side_footer">
+        <button class="theme_btn">
+          <img class="moon svgImg" src="icons/moon-svgrepo-com.svg" alt="moon">
+        </button>
+      </article>
+    </aside>
     <div class="content">
       <section class="page_content">
         <article class="discounts">
           <h1 class="discounts_title">Товары со скидками</h1>
           <div class="discount_categories">
             <div class="discount_category">
-              <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="discount_category_btn">категория</button>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="discount_category_btn">категория</button>
+              </a>
             </div>
             <div class="discount_category">
-              <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="discount_category_btn">категория</button>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="discount_category_btn">категория</button>
+              </a>
             </div>
             <div class="discount_category">
-              <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="discount_category_btn">категория</button>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="discount_category_btn">категория</button>
+              </a>
             </div>
             <div class="discount_category">
-              <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="discount_category_btn">категория</button>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="discount_category_btn">категория</button>
+              </a>
             </div>
             <div class="discount_category">
-              <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="discount_category_btn">категория</button>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="discount_category_btn">категория</button>
+              </a>
             </div>
             <div class="discount_category">
-              <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="discount_category_btn">категория</button>
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="discount_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="discount_category_btn">категория</button>
+              </a>
             </div>
           </div>
         </article>
@@ -73,55 +183,101 @@
           <h1 class="discounts_title">Покупки по категориям</h1>
           <div class="cards">
             <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="card_btn">категория</button>
-            </div>
-            <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="card_btn">категория</button>
-            </div>
-            <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="card_btn">категория</button>
-            </div>
-            <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="card_btn">категория</button>
-            </div>
-            <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="card_btn">категория</button>
-            </div>
-            <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="card_btn">категория</button>
-            </div>
-            <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="card_btn">категория</button>
-            </div>
-            <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="card_btn">категория</button>
-            </div>
-            <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="card_btn">категория</button>
-            </div>
-            <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="card_btn">категория</button>
-            </div>
-            <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <button class="card_btn">категория</button>
-            </div>
-            <div class="card">
-              <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
-              <a href="CategoryPage.html">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
                 <button class="card_btn">категория</button>
               </a>
             </div>
+            <div class="card">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="card_btn">категория</button>
+              </a>
+            </div>
+            <div class="card">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="card_btn">категория</button>
+              </a>
+            </div>
+            <div class="card">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="card_btn">категория</button>
+              </a>
+            </div>
+            <div class="card">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="card_btn">категория</button>
+              </a>
+            </div>
+            <div class="card">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="card_btn">категория</button>
+              </a>
+            </div>
+            <div class="card">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="card_btn">категория</button>
+              </a>
+            </div>
+            <div class="card">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="card_btn">категория</button>
+              </a>
+            </div>
+            <div class="card">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="card_btn">категория</button>
+              </a>
+            </div>
+            <div class="card">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="card_btn">категория</button>
+              </a>
+            </div>
+            <div class="card">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="card_btn">категория</button>
+              </a>
+            </div>
+            <div class="card">
+              <a class="card_img_link" href="CategoryPage.html">
+                <img class="card_img" src="icons/empty_img.jpg" alt="empty_img">
+              </a>
+              <a class="card_btn_link" href="CategoryPage.html">
+                <button class="card_btn">категория</button>
+              </a>
+            </div>            
           </div>
           <button class="show_more_btn">Показать больше(9)</button>
         </article>
@@ -130,7 +286,9 @@
     <footer class="footer">
       <section class="upper_footer">
         <article class="footer_content">
-          <img alt="Logo" src="icons/Logo.svg" class="footer_logo"/>
+          <a href="#logo">
+            <img alt="Logo" src="icons/Logo.svg" class="footer_logo"/>
+          </a>
           <div class="link_block">
             <h3 class="link_title">Категории</h3>
             <a class="footer_link" href="HomePage.html">Категория</a>
@@ -148,8 +306,8 @@
               <p>д. Колотушкина 28</p>
             </a>
             <div class="phones">
-              <a class="footer_link" href="HomePage.html">тел. +375 44 736-67-72</a>
-              <a class="footer_link" href="HomePage.html">тел. +375 44 222-23-33</a>
+              <a class="footer_link" href="+375445540071">тел. +375 44 736-67-72</a>
+              <a class="footer_link" href="+375445540071">тел. +375 44 222-23-33</a>
             </div>
             <a class="footer_link" href="HomePage.html">vydumanayapochta@gmail.com</a>
           </div>
@@ -166,10 +324,10 @@
             $ (USD)
           </div>
           <div class="icons">
-            <img class="social_media" src="icons/Facebook.svg" alt="facebook">
-            <img class="social_media" src="icons/twitter.svg" alt="twitter">
-            <img class="social_media" src="icons/inst.svg" alt="inst">
-            <img class="social_media" src="icons/Pinterest.svg" alt="pinterest">
+            <img class="social_media svgImg" src="icons/Facebook.svg" alt="facebook">
+            <img class="social_media svgImg" src="icons/twitter.svg" alt="twitter">
+            <img class="social_media svgImg" src="icons/inst.svg" alt="inst">
+            <img class="social_media svgImg" src="icons/Pinterest.svg" alt="pinterest">
           </div>
         </div>
       </section>

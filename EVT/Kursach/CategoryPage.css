@@ -42,6 +42,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.15s;
+}
+
+.subcategory:hover {
+  transform: scale(1.08);
 }
 
 .subcategory_img {
@@ -60,7 +65,7 @@
   width: 100%;
   max-width: 141px;
   min-width: 96px;
-  background-color: #fff;
+  background-color: var(--color-bg);
   padding: 0;
   border: none;
   font-weight: bold;
@@ -69,7 +74,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  color: black;
+  color: var(--color-text);
 }
 
 .page_items {
@@ -84,7 +89,7 @@
   width: 132px;
   height: 36px;
   border-radius: 18px;
-  outline: 2px solid black;
+  outline: 2px solid var(--color-text);
   outline-offset: -2px;
   display: flex;
   justify-content: center;
@@ -92,6 +97,11 @@
   gap: 7px;
   font-size: 12px;
   font-weight: bold;
+  transition: transform 0.15s;
+}
+
+.filters:hover {
+  transform: scale(1.08);
 }
 
 .items {
@@ -107,10 +117,15 @@
   max-height: 342px;
   font-size: 12px;
   font-weight: bold;
-  color: black;
+  color: var(--color-text);
 
   
   line-height: 154%;
+  transition: transform 0.15s;
+}
+
+.item:hover {
+  transform: scale(1.02);
 }
 
 .item_card {
@@ -139,7 +154,7 @@
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--color-bg);
   
   margin-right: 6px;
   margin-top: 6px;
@@ -148,6 +163,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.15s;
+}
+
+.favorite_item_btn:hover {
+  transform: scale(1.15);
 }
 
 .favorites_icon {
@@ -175,13 +195,19 @@
   width: 36px;
   height: 36px;
   border-radius: 18px;
-  background-color: #D9D9D9;
+  background-color: var(--color_num_line);
   font-size: 12px;
   font-weight: bold;
-  color: black;
+  color: var(--color-text);
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.number:hover {
+  transform: scale(1.2);
 }
 
 .arrow {
@@ -190,7 +216,7 @@
 }
 
 .first_page {
-  outline: 2px solid black;
+  outline: 2px solid var(--color-text);
   outline-offset: -2px;
 }
 
@@ -231,6 +257,8 @@
   .favorite_item_btn {
     height: 21px;
     width: 21px;
+    margin-top: 4px;
+    margin-right: 4px;
   }
 
   .favorites_icon {
@@ -279,6 +307,10 @@
   .items { 
     width: 100%;
     grid-template-columns: repeat(2, auto);
+  }
+
+  .item_card {
+    height: 138px;
   }
 }
 

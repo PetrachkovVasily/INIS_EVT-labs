@@ -2,8 +2,8 @@
   width: 100%;
   min-width: 380px;
   height: 102px;
-  background-color: #ffffff;
-  box-shadow: 0px 3px 5px rgb(0, 0, 0);
+  background-color: var(--color-bg);
+  box-shadow: 0px 3px 5px var(--color-text);
   display: flex;
   justify-content: center;
 }
@@ -33,6 +33,11 @@
 .Logo {
   width: 90px;
   height: 45px;
+  transition: transform 0.15s;
+}
+
+.Logo:hover {
+  transform: scale(1.1);
 }
 
 .search_bar {
@@ -40,12 +45,19 @@
   height: 48px;
   padding-left: 15px;
   padding-right: 6px;
-  outline: 2px solid black;
+  outline: 2px solid var(--color-text);
   outline-offset: -2px;
   border-radius: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.search_bar:hover {
+  .search_btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
 
 .search_string {
@@ -55,6 +67,7 @@
   border: none;
   width: 100%;
   outline: none;
+  background-color: var(--color-bg);
 }
 
 .search_btn {
@@ -66,6 +79,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: border-radius 0.15s;
 }
 
 .side_btns {
@@ -79,23 +94,41 @@
 .favorites {
   width: 18px;
   height: 15px;
+  transition: transform 0.15s;
+  cursor: pointer;
+}
+
+.favorites:hover {
+  transform: scale(1.2);
 }
 
 .cart {
   width: 21px;
   height: 18px;
+  transition: transform 0.15s;
+  cursor: pointer;
+}
+
+.cart:hover {
+  transform: scale(1.2);
 }
 
 .header_btn {
-  background-color: #fff;
+  background-color: var(--color-bg);
   padding: 0;
   border: none;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
   gap: 6px;
-  color: black;
+  color: var(--color-text);
+  transition: transform 0.15s;
+}
+
+.header_btn:hover {
+  transform: scale(1.2);
 }
 
 .under_block {
@@ -107,7 +140,19 @@
   align-items: center;
 }
 
+.header_btn.upper, .search_bar.under {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  .header_btn.upper, .search_bar.under {
+    display: flex;
+  }
+
+  .header_btn.under, .search_bar.upper, .card_img_link.under {
+    display: none;
+  }
+
   .header {
     height: 111px;
   }
@@ -126,6 +171,7 @@
   .Logo {
     width: 90px;
     height: 39px;
+    cursor: pointer;
   }
 
   .search_bar {
