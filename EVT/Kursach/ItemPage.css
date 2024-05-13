@@ -329,6 +329,11 @@
   align-items: center;
   gap: 3px;
   transition: transform 0.15s;
+  
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
 }
 
 .filter:hover {
