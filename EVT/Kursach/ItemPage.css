@@ -305,6 +305,8 @@
   padding-left: 8px;
   border-radius: 12px;
   background-color: #D9D9D9;
+  color: var(--color-bg);
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
