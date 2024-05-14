@@ -42,7 +42,6 @@ if(localStorage.getItem('isLight') == "true") {
     let newStr2 = svgImg.src.split('');
     newStr1 = newStr1.slice(40);
     newStr2 = newStr2.slice(0, 40);
-    console.log(svgImg.src)
     svgImg.src = "icons/ALT" + newStr1.join("");
   }
 }
@@ -83,7 +82,7 @@ function switchTheme(event) {
       let newStr2 = svgImg.src.split('');
       newStr1 = newStr1.slice(40);
       newStr2 = newStr2.slice(0, 40);
-      console.log("icons/ALT" + newStr1.join(""))
+      console.log(svgImg.src)
       svgImg.src = "icons/ALT" + newStr1.join("");
     }
   } else {
