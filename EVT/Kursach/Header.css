@@ -30,13 +30,13 @@
   align-items: center;
 }
 
-.Logo {
+.logo {
   width: 90px;
   height: 45px;
   transition: transform 0.15s;
 }
 
-.Logo:hover {
+.logo:hover {
   transform: scale(1.1);
 }
 
@@ -169,7 +169,7 @@
     height: 60px;
   }
 
-  .Logo {
+  .logo {
     width: 90px;
     height: 39px;
     cursor: pointer;
