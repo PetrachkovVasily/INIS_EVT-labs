@@ -122,6 +122,7 @@
   height: 24px;
   width: auto;
   transition: transform 0.15s;
+  cursor: pointer;
 }
 
 .social_media:hover {
