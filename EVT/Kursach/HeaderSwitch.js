@@ -38,11 +38,11 @@ if(localStorage.getItem('isLight') == "true") {
   localStorage.setItem('isLight', false);
 
   for (let svgImg of pageSvgArray) {
-    let newStr1 = svgImg.src.split('');
-    let newStr2 = svgImg.src.split('');
-    newStr1 = newStr1.slice(40);
-    newStr2 = newStr2.slice(0, 40);
-    svgImg.src = "icons/ALT" + newStr1.join("");
+    // let newStr1 = svgImg.src.split('');
+    // let newStr2 = svgImg.src.split('');
+    // newStr1 = newStr1.slice(40);
+    // newStr2 = newStr2.slice(0, 40);
+    svgImg.src = svgImg.src.slice(0, -4) + "ALT" + ".svg";
   }
 }
 
@@ -78,12 +78,12 @@ function switchTheme(event) {
     localStorage.setItem('isLight', false);
 
     for (let svgImg of pageSvgArray) {
-      let newStr1 = svgImg.src.split('');
-      let newStr2 = svgImg.src.split('');
-      newStr1 = newStr1.slice(40);
-      newStr2 = newStr2.slice(0, 40);
-      console.log(svgImg.src)
-      svgImg.src = "icons/ALT" + newStr1.join("");
+      // let newStr1 = svgImg.src.split('');
+      // let newStr2 = svgImg.src.split('');
+      // newStr1 = newStr1.slice(40);
+      // newStr2 = newStr2.slice(0, 40);
+      // console.log(svgImg.src)
+      svgImg.src = svgImg.src.slice(0, -4) + "ALT" + ".svg";
     }
   } else {
     document.querySelector("html").classList.remove("dark");
