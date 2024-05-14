@@ -68,6 +68,7 @@
   width: 100%;
   outline: none;
   background-color: var(--color-bg);
+  letter-spacing: 0.03em;
 }
 
 .search_btn {

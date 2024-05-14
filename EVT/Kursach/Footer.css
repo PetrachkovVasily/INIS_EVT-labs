@@ -137,6 +137,8 @@
   transform: scale(1.2);
 }
 
+.footer_link
+
 @media screen and (max-width: 852px) {
   .footer_logo {
     display: none;
@@ -198,6 +200,7 @@
 
 .footer_link {
   position: relative;
+  font-weight: 600;
 }
 
 .footer_link::after {
