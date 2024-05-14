@@ -137,8 +137,6 @@
   transform: scale(1.2);
 }
 
-.footer_link
-
 @media screen and (max-width: 852px) {
   .footer_logo {
     display: none;
