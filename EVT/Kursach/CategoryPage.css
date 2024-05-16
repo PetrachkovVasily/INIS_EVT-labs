@@ -4,6 +4,7 @@
   min-width: 380px;
   display: flex;
   justify-content: center;
+  flex-grow: 1;
 }
 
 .page_content {
