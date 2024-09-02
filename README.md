@@ -56,11 +56,6 @@ function bubbleSortConcept1(arr) {
 
 
 
-# INIS_EVT-labs
-https://heartfelt-kulfi-2f183f.netlify.app
-
-
-
 <div id="header" align="center">
   <img width="300px" height="300px" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
 
