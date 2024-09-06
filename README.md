@@ -34,13 +34,6 @@ function bubbleSortConcept1(arr) {
 }
 ```
 
-## Опыт работы
-
-* Участвовал в составе команды в Summer Slow Jams 2023: Narrative в качестве художника по окружению с использованием Blender 3D и ZBrush. 
-***[ссылка](http://github.com/KirillMeleshko004/GameJam)***
-* Курсовая работа на ReactJS + Firebase.
-***[ссылка](https://github.com/PetrachkovVasily/Baba_Is_You_Wiki)***
-
 ## Образование
 
 * Лицей Белорусско-Российского университета.
